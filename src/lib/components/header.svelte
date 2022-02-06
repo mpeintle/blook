@@ -1,4 +1,5 @@
-<div>
-	<a href="/">Home</a>
-	<a href="/blog">Blog</a>
-</div>
+<script>
+	import Navbar from '$lib/components/navbar.svelte';
+</script>
+
+<Navbar />
