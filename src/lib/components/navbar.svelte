@@ -14,18 +14,18 @@
 	}
 </script>
 
-<header class="flex flex-wrap items-center justify-between py-6 font-bold container border-b">
-	<a href="/" class="flex h-10 hover:opacity-60 transition-all">
+<header class="container flex flex-wrap items-center justify-between py-6 font-bold">
+	<a href="/" class="flex h-10 transition-all hover:opacity-60">
 		<img src="/logo.svg" alt="Logo" />
 	</a>
 	<div class="flex md:order-2">
 		<a
 			href="contact"
-			class="flex items-center bg-amber-100 text-amber-900 md:hover:translate-x-1 hover:bg-amber-900 hover:text-amber-100 transition-all px-4 py-2 rounded-full"
+			class="flex items-center px-4 py-2 transition-all rounded-full bg-amber-100 text-amber-900 md:hover:translate-x-1 hover:bg-amber-900 hover:text-amber-100"
 			><span>Contact me</span>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="h-6 w-6 -mr-2 hidden md:block"
+				class="hidden w-6 h-6 -mr-2 md:block"
 				viewBox="0 0 20 20"
 				fill="currentColor"
 			>
@@ -36,10 +36,10 @@
 				/>
 			</svg>
 		</a>
-		<button on:click={handleNav}>
+		<button class="p-1 ml-4 hover:opacity-60 md:hidden" on:click={handleNav}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="h-10 p-1 ml-4 hover:opacity-60 md:hidden"
+				class="h-10"
 				fill="none"
 				viewBox="0 0 24 24"
 				stroke="currentColor"
@@ -62,13 +62,13 @@
 		</button>
 	</div>
 	<nav
-		class="md:flex flex flex-col md:flex-row w-full md:w-auto mt-6 md:mt-0"
+		class="flex flex-col w-full mt-6 md:flex md:flex-row md:w-auto md:mt-0"
 		class:hidden={!navOpen}
 	>
 		{#each links as link}
 			<a
 				href={link.url}
-				class="transition-all text-4xl py-4 md:p-3 md:text-base opacity-60 hover:opacity-100"
+				class="py-4 text-4xl transition-all md:p-3 md:text-base opacity-60 hover:opacity-100"
 				>{link.name}</a
 			>
 		{/each}
