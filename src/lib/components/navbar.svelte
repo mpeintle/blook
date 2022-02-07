@@ -14,7 +14,9 @@
 	}
 </script>
 
-<header class="container flex flex-wrap items-center justify-between py-6 font-bold">
+<header
+	class="container flex flex-wrap items-center justify-between py-5 font-bold border-b md:border-b-0"
+>
 	<a href="/" class="flex h-10 transition-all hover:opacity-60">
 		<img src="/logo.svg" alt="Logo" />
 	</a>
